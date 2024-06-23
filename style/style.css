@@ -1,8 +1,3 @@
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -20,14 +15,12 @@ h1{
 }
 
 body{
-
     background-color: var(--dark1);
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header{
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -37,13 +30,14 @@ header{
     background-color: var(--dark6);
     min-height: 50px;
 }
+
 .box_img_logo{
     height: 100%;
 }
+
 .img_logo{
     max-width: 60px;
     height: 100%;
-
 }
 
 nav{
@@ -69,15 +63,13 @@ main{
     display: flex;
     flex-direction: column;
     gap: 2rem;    
-    
 }
 
 section{
     padding: 4rem;
-
 }
 
-.Pimeira-secao{
+.Primeira-secao{
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
@@ -86,7 +78,7 @@ section{
     min-height: 650px;
 }
 
-.Pimeira-secao div{
+.Primeira-secao div{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -108,11 +100,9 @@ strong{
     color: var(--cyan1);
 }
 
-.Pimeira-secao p {
+.Primeira-secao p {
     color: var(--white);
 }
-
-
 
 :is(button, .link-action){
     padding: .6rem;
@@ -122,7 +112,7 @@ strong{
     transition: .4s;
 }
 
-.btn-actiton{
+.btn-action{
     background-color: transparent;
     border: 1px solid var(--white);
     color: var(--white);
@@ -173,22 +163,20 @@ strong{
     font-weight: bold;
 }
 
-
 .segunda-secao ul li:hover{
     color: var(--dark5);
     transition: .4s;
     cursor: pointer;
-
 }
 
 .title{
     color: var(--dark5);
-
 }
 
 .terceira-secao{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -208,15 +196,16 @@ strong{
 .terceira-secao div p {
     max-width: 600px;
     color: var(--white);
-    text-align: justify;
+    text-align: center;
+    justify-content: center;
 }
-
 
 footer{
     padding: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    text-align: center;
 }
 
 footer div{
@@ -224,4 +213,28 @@ footer div{
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+#Meus_projetos{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#Meus_projetos a{
+    text-decoration: none;
+    color: var(--dark3);
+}
+
+#Meus_projetos a:hover{
+    color: var(--dark5);
+    transition: .4s;
+    cursor: pointer;
+}
+
+:is(.imagem-primeira, .img){
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
 }
